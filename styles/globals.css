@@ -1,0 +1,12 @@
+/* globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  @apply bg-lightBg text-navy;
+}
