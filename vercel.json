@@ -6,10 +6,14 @@
       "use": "@vercel/next"
     }
   ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
+  "routes": [{ "src": "/(.*)", "dest": "/" }],
+  "env": {
+    "NEXTAUTH_URL": "https://pharmacy-consultation-website-<your-domain>.vercel.app"
+  },
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "nodejs18.x"
     }
-  ]
+  },
+  "nodeVersion": "18.x"
 }
